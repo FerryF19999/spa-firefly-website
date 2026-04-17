@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Firefly - Laser Hair Removal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-dark: #0d182a;
+            --primary-cream: #faf7f2;
+            --accent-gold: #c9a96e;
+            --secondary-cream: #ede7dc;
+            --dark-bg: #1c1917;
+        }
+        .nav-border { border-bottom: 1px solid #c9a96e; }
+        .hero-bg { background-color: #0d182a; }
+        .services-bg { background-color: #faf7f2; }
+        .testimonials-bg { background-color: #ede7dc; }
+        .cta-bg { background-color: #1c1917; }
+        .footer-bg { background-color: #0d182a; }
+        .btn-gold { background-color: #c9a96e; color: white; }
+        .btn-gold:hover { background-color: #b8975d; }
+        .btn-outline { border: 1px solid white; color: white; }
+        .btn-outline:hover { background-color: rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="nav-border bg-white py-6 px-4 md:px-20">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold text-[var(--primary-dark)]">SPA FIREFLY</div>
+            <div class="hidden md:flex gap-8">
+                <a href="#services" class="text-[var(--primary-dark)] hover:text-[var(--accent-gold)] transition">Services</a>
+                <a href="#testimonials" class="text-[var(--primary-dark)] hover:text-[var(--accent-gold)] transition">Testimonials</a>
+                <a href="#faq" class="text-[var(--primary-dark)] hover:text-[var(--accent-gold)] transition">FAQ</a>
+                <a href="#contact" class="btn-gold px-6 py-2 rounded transition">Book Now</a>
+            </div>
+            <button class="md:hidden text-[var(--primary-dark)]">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-12 md:py-20 px-4 md:px-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6">Laser Hair Removal</h1>
+            <p class="text-lg md:text-xl mb-8 md:mb-10 opacity-90">Professional, pain-free treatments for smooth, hair-free skin</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="btn-gold px-6 md:px-8 py-3 rounded text-lg transition">Book Consultation</button>
+                <button class="btn-outline px-6 md:px-8 py-3 rounded text-lg transition">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-bg py-12 md:py-20 px-4 md:px-20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-[var(--primary-dark)]">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white p-6 md:p-8 rounded shadow">
+                    <h3 class="text-xl font-bold mb-3 md:mb-4">Full Body Laser</h3>
+                    <p class="text-gray-600">Complete hair removal treatment for all body areas.</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded shadow">
+                    <h3 class="text-xl font-bold mb-3 md:mb-4">Facial Laser</h3>
+                    <p class="text-gray-600">Precise treatment for facial hair removal.</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded shadow">
+                    <h3 class="text-xl font-bold mb-3 md:mb-4">Bikini Line</h3>
+                    <p class="text-gray-600">Specialized treatment for sensitive areas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-bg py-12 md:py-20 px-4 md:px-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-[var(--primary-dark)]">Client Testimonials</h2>
+            <div class="bg-white p-6 md:p-8 rounded shadow max-w-2xl mx-auto">
+                <p class="text-lg italic mb-4 md:mb-6">"The best laser treatment I've ever had. Painless and effective!"</p>
+                <p class="font-bold">- Sarah M.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-12 md:py-20 px-4 md:px-20">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center text-[var(--primary-dark)]">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="border-b pb-4">
+                    <h3 class="text-xl font-bold mb-2">Is laser hair removal painful?</h3>
+                    <p class="text-gray-600">Most clients describe it as a mild snapping sensation.</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h3 class="text-xl font-bold mb-2">How many sessions are needed?</h3>
+                    <p class="text-gray-600">Typically 6-8 sessions for optimal results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-bg text-white py-12 md:py-20 px-4 md:px-20 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Ready for Smooth, Hair-Free Skin?</h2>
+        <p class="text-lg md:text-xl mb-8 md:mb-10 opacity-90">Book your consultation today</p>
+        <button class="btn-gold px-8 md:px-10 py-3 rounded text-lg transition">Book Now</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white py-6 md:py-8 px-4 md:px-20">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+            <div class="text-center md:text-left">© 2026 SPA FIREFLY. All rights reserved.</div>
+            <div class="flex gap-4 md:gap-6">
+                <a href="#" class="hover:text-[var(--accent-gold)] transition">Privacy</a>
+                <a href="#" class="hover:text-[var(--accent-gold)] transition">Terms</a>
+                <a href="#" class="hover:text-[var(--accent-gold)] transition">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('button.md\:hidden').addEventListener('click', function() {
+            const nav = document.querySelector('.hidden.md\:flex');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('right-0');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('gap-4');
+        });
+    </script>
+</body>
+</html>
